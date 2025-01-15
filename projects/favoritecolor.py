@@ -7,7 +7,7 @@ print()
 animal = input("Please state you're favorite animal: ")
 
 print()
-print(f"Your favorite animal is a(n): {animal} :D" )
+print(f"Your favorite animal is a(n): {animal} :D")
 
 answer = input(f"Do you like {color} {animal}s? ")
 
@@ -16,5 +16,5 @@ if answer == "yes":
     print("Oh good! I like them too!")
 elif answer == "maybe":
     print("Give me a better answer!")
-else: 
+else:
     print("Repent, and try again.")
