@@ -14,3 +14,6 @@ print(f"There are {people_per_car:.2f} people in each car.")
 #This is with rounding to three
 print(f"There are {people_per_car:.3f} people in each car.")
 
+#When there is no 'f' after the nymber it will just count the total digits 
+#Not the digits after the decimal.
+
