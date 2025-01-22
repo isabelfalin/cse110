@@ -17,3 +17,4 @@ print(f"There are {people_per_car:.3f} people in each car.")
 #When there is no 'f' after the nymber it will just count the total digits 
 #Not the digits after the decimal.
 
+#If you use 'e' it turns the display into scientific notation.
