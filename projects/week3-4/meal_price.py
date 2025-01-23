@@ -16,6 +16,7 @@ print()
 subtoal1 = (number_child * child_meal)
 subtotal2 =(number_adult * adult_meal)
 subtotal = (subtoal1 + subtotal2 )
+
 drink_total = (drink_price * drink)
 pie_total = (pie_price * pie_number)
 specialty_total = (drink_total + pie_total)
