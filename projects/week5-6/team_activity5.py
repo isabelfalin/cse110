@@ -6,17 +6,6 @@ f = 50
 
 percentage = int(input("What is your grade percentage? "))
 
-# if percentage >= a:
-#     print("Your leter grade is A")
-# elif percentage >= b:
-#     print("Your letter grade is B")
-# elif percentage >= c:
-#     print("Your letter grade is C")
-# elif percentage >= d:
-#     print("Your letter grade is D")
-# elif percentage >= f:
-#     print("Your letter grade is an F")
-
 letter = ""
 unit_place = percentage % 10 
 modifier = ""
