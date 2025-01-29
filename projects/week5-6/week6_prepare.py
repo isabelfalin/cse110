@@ -54,3 +54,21 @@
 # # It works, but is generally avoided to check if it is false:
 # if is_hot == False:
 #     print("It is not hot")
+
+x = 3
+y = 2
+
+if x == 3 and y == 2:
+    print("The and condition is True.")
+else:
+    print("The and condition is False.")
+
+if x == 3 or y == 2:
+    print("The or condition is True.")
+else:
+    print("The or condition is False.")
+# if x != 3:
+if not x == 3:
+    print("the not conditon is True.")
+else:
+    print("The not condition is False.")
