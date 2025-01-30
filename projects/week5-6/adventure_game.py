@@ -18,13 +18,10 @@ elif action.lower() == "observe":
     print("""You study the artifact without touching it and become mezmorized by the glow coming from within. 
           Your soul is sucked into the artifact.""")
     print("You have died. Game over.")
-
 elif action.lower() == "kick":
     print("""You reel your leg back and strike the artifact, launching it further down the passage. As the artifact hits the ground it promptly explodes, 
           filling the tunnel with light, and illuminating another ancient alter. """)
     print("You must make a decision, do you GIVE UP or CONTINUE? ")
-else:
-    print("That's not an option. Game over.")
 
     action = input("> ")
 if action.lower() == "give up":
