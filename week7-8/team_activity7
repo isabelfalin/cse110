@@ -6,6 +6,7 @@
 # What is the magic number? 6
 # What is your guess? 4
 # Higher
+
 import random
 
 
@@ -16,7 +17,7 @@ while play_game == "yes":
     number = None
     
     while number != magic_number: 
-        number = int(input("WHat is your guess? "))
+        number = int(input("What is your guess? "))
         if number < magic_number:
             print("Higher")
         elif number > magic_number:
