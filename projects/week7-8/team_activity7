@@ -15,14 +15,17 @@ play_game = "yes"
 while play_game == "yes":
     magic_number = random.randint(1, 100)
     number = None
+    counter = 0
     
     while number != magic_number: 
         number = int(input("What is your guess? "))
+        counter = counter + 1
         if number < magic_number:
             print("Higher")
         elif number > magic_number:
             print("Lower")
         else:
-            print("You guessed it!")
+            print(f"You guessed it! It took you {counter} guesses!")
     
     play_game = input("Would you like the play again? ").lower()
+
