@@ -37,7 +37,7 @@ if action.lower() == "left":
         else:
             print("That's not an option. Game over.")
 
-if action.lower() == "right":
+elif action.lower() == "right":
     print("You turn down the right passage and begin walking down. As you do the passage narrows, and you hear whispers echoing in the dark. Do you RUN, or LISTEN? ")
     action = input("> ")
     if action.lower() == "run":
