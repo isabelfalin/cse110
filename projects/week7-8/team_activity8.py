@@ -9,7 +9,7 @@
 # favorite_letter = input("What is your favorite letter? ")
 
 # word = "commitment"
-# for letter in word:
+# for letter in word.lower():
 #     if letter == favorite_letter.lower():
 #         print("_", end="")
 #     else: 
