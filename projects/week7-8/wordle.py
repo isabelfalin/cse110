@@ -1,40 +1,57 @@
-# Have a secret word stored in the program.
+import random
 
-# Prompt the user for a guess.
+word_list = ["elephant", "juice", "house", "bacon", "temple", "soccer", "snowboarding", "supercalifragilisticexpialidocious"]
 
-# Continue looping as long as that guess is not correct.
+# Setup the game
+secret_word = random.choice(word_list)
+counter = 0
+guess = None
 
-# Calculate the number of guesses and display it at the end.
+# print the hint
+print("Your hint is: ", end="")
+for letter in secret_word:
+    print("_ ", end="")
 
-# You do not need to have any hints at this point.
+print("\n")
 
-# secret_word = "elephant".lower()
-# guess = None 
-# counter = 0
-# while guess != secret_word:
-#     guess = input("What is your guess? ").lower() 
-#     counter = counter + 1
-#     if guess == secret_word:
-#         print(f"You guessed it! It took you {counter} guesses!")
-#     else:
-#         print("Your guess is not correct.")
+# Start the game loop
+while guess != secret_word:
+    counter = counter + 1
 
+    # Get guess
+    guess = input("What is your guess? ").lower() 
 
-secret_word = "monkey"
-guess = input(f"Give me a {len(secret_word)} letter word: ").lower()
-print(f"Comparing {secret_word} and {guess}.")
+    # check guess length
+    if len(guess) != len(secret_word):
+        print(f"Sorry, the guess must have {len(secret_word)} letters.\n")
+        continue
+    
+    # Check guess
+    if guess == secret_word:
+        print(f"You guessed it! It took you {counter} guesses!")
+    else:
+        print("Your guess is not correct.")
 
-if (len(guess)) == (len(secret_word)):
-    for position in range(len(secret_word)):
-        guess_letter = guess[position]
-        same_position = guess_letter == secret_word[position]
-        found_in_word = guess_letter in secret_word
-        if same_position:
-            print(f"{guess_letter} is at the same position as both words")
-        elif found_in_word:
-            print(f"{guess_letter} is in the word but not at this position")
-        else:
-            print(f"{guess_letter} is not found in the word")
-else:
-    print(f"that was NOT a {len(secret_word)} letter word!")
+        # Print the new hint
+        print("Your hint is: ", end="")
 
+        for position in range(len(secret_word)):
+
+            guess_letter = guess[position]
+            secret_letter = secret_word[position]
+            
+            if guess_letter == secret_letter:
+                same_position = True
+            else:
+                same_position = False
+            
+            found_in_word = guess_letter in secret_word
+
+            if same_position:
+                print(f"{guess_letter.upper()} ", end="")
+            elif found_in_word:
+                print(f"{guess_letter.lower()} ", end="")
+            else:
+                print("_ ", end="")
+
+        print("\n")
