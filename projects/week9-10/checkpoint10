@@ -1,0 +1,23 @@
+shopping_list = []
+items = input("Item: ")
+
+while shopping_list != "quit":
+    print(items)
+
+
+
+
+# print("Please enter the items of the shopping list (type: quit to finish): ")
+# items = []
+# item = None
+
+# while item != "quit":
+#     items.append(item)
+#     item = input("Items: ")
+# print(f"Your list is: {items}")
+
+
+
+
+
+
