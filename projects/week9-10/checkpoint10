@@ -1,21 +1,31 @@
 shopping_list = []
-items = input("Item: ")
+item = None
 
-while shopping_list != "quit":
-    print(items)
+print("Please enter the items of the shopping list (type: quit to finish):")
+while item != "quit":
+    item = input("Item: ")
+    if item != "quit":
+        shopping_list.append(item)
 
+print(f"The shopping list is: ")
+for item in shopping_list:
+    print(item)
 
+print()
 
+print(f"The shopping list with indexs is: ")
+for index in range(len(shopping_list)):
+    item = shopping_list[index]
+    print(f"{index}. {item}")
 
-# print("Please enter the items of the shopping list (type: quit to finish): ")
-# items = []
-# item = None
+change = int(input("Which item would you like to change? "))
+new_item = input("What is the new item? ")
 
-# while item != "quit":
-#     items.append(item)
-#     item = input("Items: ")
-# print(f"Your list is: {items}")
+shopping_list[change] = new_item
 
+print(f"The shopping list is: ")
+for item in shopping_list:
+    print(item)
 
 
 
