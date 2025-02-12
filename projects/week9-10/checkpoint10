@@ -7,6 +7,8 @@ while item != "quit":
     if item != "quit":
         shopping_list.append(item)
 
+print()
+
 print(f"The shopping list is: ")
 for item in shopping_list:
     print(item)
@@ -23,7 +25,10 @@ new_item = input("What is the new item? ")
 
 shopping_list[change] = new_item
 
+print()
+
 print(f"The shopping list is: ")
+#for every "item" already inside "shopping_list" print or do something to that "item"
 for item in shopping_list:
     print(item)
 
