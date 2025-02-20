@@ -2,6 +2,7 @@
 chapters_largest = 0
 answer = input("What scriptures would you like to learn about? ")
 
+
 with open("books_and_chapters.txt") as book_file:
     for info in book_file:
         split_person = info.strip().split(":")
